@@ -1,6 +1,5 @@
 package com.jaa.ham;
 
-import org.junit.Ignore;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.ApplicationArguments;
 import org.springframework.boot.ApplicationRunner;
@@ -14,7 +13,6 @@ import com.jaa.ham.entities.EnumCondition;
 import com.jaa.ham.repository.AbonneRepository;
 import com.jaa.ham.repository.AdresseRepository;
 import com.jaa.ham.repository.ContratRepository;
-import com.jaa.ham.service.ContratService;
 
 @SpringBootApplication
 public class ResTfulSpringBootApplication  implements ApplicationRunner  {
@@ -26,8 +24,6 @@ public class ResTfulSpringBootApplication  implements ApplicationRunner  {
 	private AdresseRepository adresseRepository;
 	@Autowired
 	private ContratRepository contratRepository;
-	@Autowired
-	private ContratService contratService;
 	
 	public static void main(String[] args) {
 		SpringApplication.run(ResTfulSpringBootApplication.class, args);
