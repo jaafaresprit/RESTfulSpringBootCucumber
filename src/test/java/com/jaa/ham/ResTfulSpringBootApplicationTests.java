@@ -16,20 +16,67 @@ import org.springframework.web.context.WebApplicationContext;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
+import com.jaa.ham.entities.Abonne;
+import com.jaa.ham.entities.Adresse;
+import com.jaa.ham.entities.Contrat;
 import com.jaa.ham.entities.EnumCondition;
+import com.jaa.ham.repository.AbonneRepository;
+import com.jaa.ham.repository.AdresseRepository;
+import com.jaa.ham.repository.ContratRepository;
 
-@Ignore
+
 @SpringBootTest(classes = ResTfulSpringBootApplication.class)
 public class ResTfulSpringBootApplicationTests extends AbstractTestNGSpringContextTests {
 
 	@Autowired
 	private WebApplicationContext webApplicationContext;
+	@Autowired
+	ContratRepository contratRepository;
+	@Autowired
+	AdresseRepository adresseRepository;
+	@Autowired
+	AbonneRepository abonneRepository;
 
 	private MockMvc mockMvc;
 
 	@BeforeClass
 	public void setup() {
 		mockMvc = MockMvcBuilders.webAppContextSetup(webApplicationContext).build();
+		
+		Abonne abonne = new Abonne();
+		abonne.setId(1L);
+		abonne.setNom("ABo1");
+		abonne.setPrenom("AB1");
+
+		abonneRepository.save(abonne);
+
+		Adresse adresse = new Adresse();
+		adresse.setId(1L);
+		adresse.setNumero("12");
+		adresse.setVoie("adresse");
+		adresse.setVille("Ville1");
+		adresse.setActive(true);
+		adresse.setPays("France");
+		adresse.setCondition(EnumCondition.SDE);
+		adresseRepository.save(adresse);
+
+		Adresse adresse2 = new Adresse();
+		adresse2.setId(2L);
+		adresse2.setNumero("22");
+		adresse2.setVoie("adresse2");
+		adresse2.setVille("Ville2");
+		adresse2.setActive(true);
+		adresse2.setPays("France");
+		adresse2.setCondition(EnumCondition.ADE);
+		adresseRepository.save(adresse2);
+
+		adresse = adresseRepository.findById(1L).get();
+		Contrat contrat = new Contrat();
+		contrat.setId(1L);
+		contrat.setAbonne(abonne);
+		contrat.setAdresse(adresse);
+		contrat.setCanal("canal1");
+		contratRepository.save(contrat);
 	}
 
 	

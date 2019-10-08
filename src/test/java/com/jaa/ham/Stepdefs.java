@@ -13,6 +13,7 @@ import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.http.MediaType;
 import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
+import org.springframework.test.context.testng.AbstractTestNGSpringContextTests;
 import org.springframework.test.context.web.WebAppConfiguration;
 import org.springframework.test.web.servlet.MockMvc;
 import org.springframework.test.web.servlet.setup.MockMvcBuilders;
@@ -35,7 +36,7 @@ import cucumber.api.java.en.When;
 @ContextConfiguration(loader = SpringBootContextLoader.class)
 @WebAppConfiguration
 @SpringBootTest(classes = ResTfulSpringBootApplication.class)
-public class Stepdefs {
+public class Stepdefs{
 
 	@Autowired
 	ContratRepository contratRepository;
