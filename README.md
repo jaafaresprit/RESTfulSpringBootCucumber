@@ -15,4 +15,6 @@ Et un mouvement de modification d'adresse est créé
 
 <b>Languge</b> : JAVA<br>
 <b>Framework & Libs</b> : Spring & Spring Boot, Cucumber, TestNG<br>
-<b>Exécution de test</b> : exécuter RunCucumberTest
+<b>Exécution de test</b> : <br>
+cd RESTfulSpringBoot/
+mvn test

@@ -48,13 +48,6 @@
 			<artifactId>testng</artifactId>
 			<version>6.8.5</version>
 		</dependency>
-
-		<!-- <dependency> <groupId>info.cukes</groupId> <artifactId>cucumber-java</artifactId> 
-			<version>1.2.4</version> <scope>test</scope> </dependency> <dependency> <groupId>info.cukes</groupId> 
-			<artifactId>cucumber-junit</artifactId> <version>1.2.4</version> <scope>test</scope> 
-			</dependency> <dependency> <groupId>info.cukes</groupId> <artifactId>cucumber-spring</artifactId> 
-			<version>1.2.4</version> <scope>test</scope> </dependency> -->
-
 		<dependency>
 			<groupId>net.serenity-bdd</groupId>
 			<artifactId>serenity-cucumber</artifactId>
