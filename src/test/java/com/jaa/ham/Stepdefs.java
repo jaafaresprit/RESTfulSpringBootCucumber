@@ -18,11 +18,9 @@ import org.springframework.test.web.servlet.setup.MockMvcBuilders;
 import org.springframework.web.context.WebApplicationContext;
 
 import com.jaa.ham.entities.EnumCondition;
-import com.jaa.ham.repository.AbonneRepository;
-import com.jaa.ham.repository.AdresseRepository;
-import com.jaa.ham.repository.ContratRepository;
 
 import cucumber.api.java.Before;
+import cucumber.api.java.en.And;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
@@ -34,12 +32,6 @@ import net.serenitybdd.cucumber.CucumberWithSerenity;
 @SpringBootTest(classes = ResTfulSpringBootApplication.class)
 public class Stepdefs{
 
-	@Autowired
-	ContratRepository contratRepository;
-	@Autowired
-	AdresseRepository adresseRepository;
-	@Autowired
-	AbonneRepository abonneRepository;
 
 	@Autowired
 	private WebApplicationContext webApplicationContext;
@@ -82,7 +74,7 @@ public class Stepdefs{
 				.andExpect(jsonPath("$.adresse.ville").value("Ville2"));
 	}
 
-	@Then("^un mouvement de modification d'adresse est créés$")
+	@And("^un mouvement de modification d'adresse est créés$")
 	public void un_mouvement_de_modification_d_adresse_est_créés() throws Throwable {
 		mockServer.perform(get("/contrats/1/audit")).andExpect(status().isOk())
 				.andExpect(jsonPath("$.adresse.id").value("1")).andExpect(jsonPath("$.adresse.ville").value("Ville1"))

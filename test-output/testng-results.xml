@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="20653" started-at="2019-10-09T19:44:31Z" finished-at="2019-10-09T19:44:52Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="20653" started-at="2019-10-09T19:44:31Z" finished-at="2019-10-09T19:44:52Z">
+      <class name="com.jaa.ham.ResTfulSpringBootApplicationTests">
+        <test-method status="PASS" signature="springTestContextBeforeTestClass()[pri:0, instance:com.jaa.ham.ResTfulSpringBootApplicationTests@5b7a7f33]" name="springTestContextBeforeTestClass" is-config="true" duration-ms="29" started-at="2019-10-09T19:44:31Z" finished-at="2019-10-09T19:44:31Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- springTestContextBeforeTestClass -->
+        <test-method status="PASS" signature="springTestContextPrepareTestInstance()[pri:0, instance:com.jaa.ham.ResTfulSpringBootApplicationTests@5b7a7f33]" name="springTestContextPrepareTestInstance" is-config="true" duration-ms="19649" started-at="2019-10-09T19:44:31Z" depends-on-methods="org.springframework.test.context.testng.AbstractTestNGSpringContextTests.springTestContextBeforeTestClass" finished-at="2019-10-09T19:44:51Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- springTestContextPrepareTestInstance -->
+        <test-method status="PASS" signature="setup()[pri:0, instance:com.jaa.ham.ResTfulSpringBootApplicationTests@5b7a7f33]" name="setup" is-config="true" duration-ms="137" started-at="2019-10-09T19:44:51Z" finished-at="2019-10-09T19:44:51Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="springTestContextBeforeTestMethod(java.lang.reflect.Method)[pri:0, instance:com.jaa.ham.ResTfulSpringBootApplicationTests@5b7a7f33]" name="springTestContextBeforeTestMethod" is-config="true" duration-ms="4" started-at="2019-10-09T19:44:51Z" finished-at="2019-10-09T19:44:51Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.jaa.ham.ResTfulSpringBootApplicationTests.test_change_adresse() throws java.lang.Exception]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- springTestContextBeforeTestMethod -->
+        <test-method status="PASS" signature="test_change_adresse()[pri:0, instance:com.jaa.ham.ResTfulSpringBootApplicationTests@5b7a7f33]" name="test_change_adresse" duration-ms="511" started-at="2019-10-09T19:44:51Z" finished-at="2019-10-09T19:44:52Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test_change_adresse -->
+        <test-method status="PASS" signature="springTestContextAfterTestMethod(java.lang.reflect.Method)[pri:0, instance:com.jaa.ham.ResTfulSpringBootApplicationTests@5b7a7f33]" name="springTestContextAfterTestMethod" is-config="true" duration-ms="1" started-at="2019-10-09T19:44:52Z" finished-at="2019-10-09T19:44:52Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.jaa.ham.ResTfulSpringBootApplicationTests.test_change_adresse() throws java.lang.Exception]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- springTestContextAfterTestMethod -->
+        <test-method status="PASS" signature="springTestContextBeforeTestMethod(java.lang.reflect.Method)[pri:0, instance:com.jaa.ham.ResTfulSpringBootApplicationTests@5b7a7f33]" name="springTestContextBeforeTestMethod" is-config="true" duration-ms="1" started-at="2019-10-09T19:44:52Z" finished-at="2019-10-09T19:44:52Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.jaa.ham.ResTfulSpringBootApplicationTests.test_get_last_adresse_audit() throws java.lang.Exception]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- springTestContextBeforeTestMethod -->
+        <test-method status="PASS" signature="test_get_last_adresse_audit()[pri:1, instance:com.jaa.ham.ResTfulSpringBootApplicationTests@5b7a7f33]" name="test_get_last_adresse_audit" duration-ms="272" started-at="2019-10-09T19:44:52Z" finished-at="2019-10-09T19:44:52Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test_get_last_adresse_audit -->
+        <test-method status="PASS" signature="springTestContextAfterTestMethod(java.lang.reflect.Method)[pri:0, instance:com.jaa.ham.ResTfulSpringBootApplicationTests@5b7a7f33]" name="springTestContextAfterTestMethod" is-config="true" duration-ms="1" started-at="2019-10-09T19:44:52Z" finished-at="2019-10-09T19:44:52Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.jaa.ham.ResTfulSpringBootApplicationTests.test_get_last_adresse_audit() throws java.lang.Exception]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- springTestContextAfterTestMethod -->
+        <test-method status="PASS" signature="springTestContextAfterTestClass()[pri:0, instance:com.jaa.ham.ResTfulSpringBootApplicationTests@5b7a7f33]" name="springTestContextAfterTestClass" is-config="true" duration-ms="0" started-at="2019-10-09T19:44:52Z" finished-at="2019-10-09T19:44:52Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- springTestContextAfterTestClass -->
+      </class> <!-- com.jaa.ham.ResTfulSpringBootApplicationTests -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

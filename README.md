@@ -18,5 +18,5 @@ Et un mouvement de modification d'adresse est créé
 <b>Exécution de test</b> : <br>
 <pre>
 cd RESTfulSpringBoot/
-mvn test
+mvn verify
 </pre>
